@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  #show log with color
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:mysql://seeyouweb.com/jooq_test?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: XQDD
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database: mysql
